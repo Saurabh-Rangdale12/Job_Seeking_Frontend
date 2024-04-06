@@ -15,7 +15,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4001/api/v1/job/${id}`, {
+      .get(`https://job-seeking-website-seven.vercel.app/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

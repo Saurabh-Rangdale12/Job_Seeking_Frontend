@@ -14,8 +14,8 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4001/api/v1/user/logout",
-        { withCredentials: true }
+        "https://job-seeking-website-seven.vercel.app/api/v1/user/logout",
+        { withCredentials: true, }
       );
       toast.success(response.data.message);
       setIsAuthorized(false);
